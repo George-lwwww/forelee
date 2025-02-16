@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For ele</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        img {
+            width: 400px;
+            height: auto;
+        }
+
+        button {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+
+        }
+
+        button:hover {
+            background-color: #005f6a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Όχι τόσο γρήγορα!! Gotta confirm your identity first..</h1>
+    <img src="pic.png">
+    <p>Πόσα άτομα βλέπεις μέσα σε αυτήν την εικόνα;;</p>
+
+    <button onclick="checkAnswer(1)">1</button>
+    <button onclick="checkAnswer(2)">2</button>
+
+    <script>
+        function checkAnswer(answer) {
+            if (answer === 1) {
+                window.location.href = "bestie.html";
+            } else if (answer === 2) {
+                alert("i bro elenxi to site");
+                window.location.href = "about:blank";
+            }
+        }
+    </script>
+</body>
+
+</html>

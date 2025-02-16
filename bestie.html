@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP SECRET</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: pink;
+            color: white;
+            text-align: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        img {
+            width: 400px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <img src="batman-holding-flowers.webp">
+    <h1 style="font-weight: bold; font-style: italic;">Hey ho, these flowers are for you</h1>
+    <button id="playButton">Click me</button>
+
+    <audio id="audio" preload="auto">
+        <source src="Anything.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        document.getElementById('playButton').addEventListener('click', function () {
+            document.getElementById('audio').play();
+            this.style.display = 'none';  
+        });
+    </script>
+    <p>Αφού μάλλον δεν πήρες λουλούδια τη μέρα του Βαλεντίνου, ελπίζω αυτό να είναι κάτι. I wanted to do something <br>
+        a little more special, sending tiktoks was not it.<br>
+        Thank you for being such a good friend.<br>
+        Με έχεις βοηθήσει πολύ περισσότερο απ' όσο ξέρεις, και ξέρω πως σου το 'χω πει άπειρες φορές, αλλά να ξέρεις πως
+        θα είμαι <br>
+        πάντα εδώ για εσένα.
+        <hr>And I am so <b>proud</b> of you.<br>
+        ps: your not a ho
+    </p>
+
+
+
+
+
+</body>
+
+</html>
